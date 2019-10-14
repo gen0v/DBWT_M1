@@ -3,7 +3,7 @@ html {
 }
 
 .col-3, .col-6, .col-7, .col-9 {
-   border: 0px solid black;
+   border: 1px solid black;
 }
 
 #image_start_banner {
