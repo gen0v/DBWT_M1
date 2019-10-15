@@ -6,23 +6,26 @@
     <!--
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     -->
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
 <div class="container">
     <header class="row">
         <!--  LOGO | MENU | SEARCHBAR  -->
-        <div class="col-3" id="header_logo"><h1>e-Mensa</h1></div>
+        <div class="col-3" id="header_logo"><h1 id="logo_emensa">e-Mensa</h1></div>
         <nav class="col-6" id="header_menu">
             <ul class="nav" id="header_menu_nav">
-                <li class="nav-item"><a class="nav-link" href="Start.html">Start</a></li>
+                <li class="nav-item"><a class="nav-link link_selected" href="Start.html">Start</a></li>
                 <li class="nav-item"><a class="nav-link" href="Produkte.html">Mahlzeiten</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Bestellungen</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://www.fh-aachen.de/" target="_blank">FH-Aachen</a></li>
             </ul>
         </nav>
         <div class="col-3" id="header_search">
+            <span class="fas fa-search" id="icon_search"></span>
             <input id="input_search" placeholder="Suchen...">
         </div>
     </header>
@@ -37,11 +40,11 @@
             [ TEXT1  |
               TEXT2 ]|
             -->
-            <p>
+            <p class="text_info">
                 Der Dienst e-Mensa ist noch beta. Sie können bereits Mahlzeiten
                 durchstöbern, aber noch nicht bestellen.
             </p>
-            <p>
+            <p class="text_info">
                 Registrieren Sie sich hier, um über die Veröffentlichung des
                 Dienstes per Mail informiert zu werden.
             </p>
@@ -53,14 +56,20 @@
              -->
             <div class="row" id="content_bot_row_right_top">
                 <div class="col-9" id="content_bot_row_right_top_headline">
-                    <h2>Leckere Gerichte vorbestellen</h2>
-                    <p>
+                    <h2 id="text_headline">Leckere Gerichte vorbestellen</h2>
+                    <p class="text_headline_extra">
                         ... und gemeinsam mit Kommilitonen und Freunden essen
                     </p>
                 </div>
                 <div class="col-3" id="content_bot_row_right_top_buttons">
-                    <button id="button_register" value="">Registrieren</button>
-                    <button id="button_register" value="">Anmelden</button>
+                    <button class="btn btn-primary btn-lg" id="button_register" value="">
+                        <i class="far fa-hand-point-right" id="icon_finger"></i>
+                        Registrieren
+                    </button>
+                    <button class="btn btn-primary btn-lg" id="button_login" value="">
+                        <i class="fas fa-sign-in-alt" id="icon_signin"></i>
+                        Anmelden
+                    </button>
                 </div>
             </div>
             <div class="row" id="content_bot_row_right_bot">

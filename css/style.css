@@ -1,0 +1,105 @@
+html {
+
+}
+
+.container {
+    margin-top: 1em;
+}
+
+header {
+    padding-bottom: 5px;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #08c0ad;
+}
+footer {
+    padding-top: 5px;
+    margin-top: 2em;
+    border-top: 2px solid #08c0ad;
+}
+
+input {
+    width: 100%;
+    border-radius: 50px;
+}
+
+button {
+    width: 11em;
+    height: 2.5em;
+    margin-top: 8px;
+    float: right;
+    box-shadow: black;
+}
+#button_register, #button_login {
+    width: 9em;
+    background-color: white;
+    color: black;
+    border-color: gray;
+}
+button:hover {
+    background-color: #08c0ad !important;
+    border-color: black;
+    color: white !important;
+}
+
+.text_info {
+    font-size: 1.3em;
+}
+.text_headline_extra {
+    font-size: 1.3em;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: #08c0ad;
+}
+.link_selected {
+    color: #08c0ad;
+}
+
+li {
+    box-shadow: 0px 0.5em white inset,0 -0.5em white inset , -2px -0 0 0 #08c0ad inset;
+}
+li:last-child {
+    box-shadow: 0 0 white inset;
+}
+
+.col-3, .col-6, .col-7, .col-9 {
+   border: 0px solid black;
+}
+
+#header_menu_nav{
+    margin-top: 1em;
+}
+#input_search{
+    margin-top: 1.5em;
+    padding-left: 35px;
+}
+
+#content_bot_row_right_top_headline {
+    margin-bottom: 5.1em;
+}
+
+#image_start_banner {
+}
+
+#content_bot_row {
+    margin-top: 2em;
+}
+
+#logo_emensa {
+    color: #08c0ad;
+}
+
+#icon_search {
+    position: absolute;
+    float: left;
+    margin-top: 1.9em;
+    margin-left: 0.5em;
+    color: #08c0ad;
+}
+
+#text_headline {
+    font-size: 2.4em;
+}
