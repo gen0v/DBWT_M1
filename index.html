@@ -14,8 +14,17 @@
     <header class="row">
         <!--  LOGO | MENU | SEARCHBAR  -->
         <div class="col-3" id="header_logo"><h1>e-Mensa</h1></div>
-        <div class="col-6" id="header_menu">MENU</div>
-        <div class="col-3" id="header_search">SEARCH</div>
+        <nav class="col-6" id="header_menu">
+            <ul class="nav" id="header_menu_nav">
+                <li class="nav-item"><a class="nav-link" href="Start.html">Start</a></li>
+                <li class="nav-item"><a class="nav-link" href="Produkte.html">Mahlzeiten</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Bestellungen</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.fh-aachen.de/" target="_blank">FH-Aachen</a></li>
+            </ul>
+        </nav>
+        <div class="col-3" id="header_search">
+            <input id="input_search" placeholder="Suchen...">
+        </div>
     </header>
     <div class="row" id="content_top_row">
         <div class="col" id="content_top_row_picture">
@@ -49,17 +58,29 @@
                         ... und gemeinsam mit Kommilitonen und Freunden essen
                     </p>
                 </div>
-                <div class="col-3" id="content_bot_row_right_top_buttons">Buttons</div>
+                <div class="col-3" id="content_bot_row_right_top_buttons">
+                    <button id="button_register" value="">Registrieren</button>
+                    <button id="button_register" value="">Anmelden</button>
+                </div>
             </div>
             <div class="row" id="content_bot_row_right_bot">
-                <div class="col" id="content_bot_row_right_bot_picture">Picture</div>
+                <div class="col" id="content_bot_row_right_bot_picture">
+                    <img class="img-fluid rounded" id="image_start_banner_2" src="img/food_banner_2_resized.jpg" title="Photo by Dan Gold on Unsplash">
+                </div>
             </div>
         </div>
     </div>
     <footer class="row">
         <!--  Copyright | MENU |   -->
         <div class="col-3" id="footer_copyright">&copy; 2019 Eugen Burikov</div>
-        <div class="col-6" id="footer_menu">MENU</div>
+        <nav class="col-6" id="footer_menu">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Registrieren</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Zutatenliste</a></li>
+                <li class="nav-item"><a class="nav-link" href="Impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
         <div class="col-3" id="footer_placeholder">S</div>
     </footer>
 </div>
