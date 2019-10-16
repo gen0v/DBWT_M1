@@ -31,9 +31,9 @@
     </header>
     <!-- CONTENT                                    --                      --                  --              -->
     <div class="row" id="content_top_row">
-        <div class="col-3">1</div>
+        <div class="col-3"></div>
         <div class="col-6"><h2 id="text_headline_produkte">Verfügbare Speisen (Bestseller)</h2></div>
-        <div class="col-3">3</div>
+        <div class="col-3"></div>
     </div>
     <div class="row" id="content_bot_row">
         <div class="col-3 mint-border" id="content_bot_row_left">
@@ -41,77 +41,93 @@
             [Filter]
             -->
             <span id="text_headline_filter">Speisenliste filtern</span>
-            <input>
-            <input type="checkbox" id="input_checkbox_products_1">
-            <label for="input_checkbox_products_1">test</label>
-            <button class="btn btn-primary button-fh-schema" id="button_filter">Speisen filtern</button>
+            <select id="select_filter">
+                <optgroup label="">
+                    <option selected>Kategorien</option>
+                </optgroup>
+            </select>
+            <div>
+                <input type="checkbox" id="input_checkbox_products_1">
+                <label for="input_checkbox_products_1">nur verfügbare</label>
+            </div>
+            <div>
+                <input type="checkbox" id="input_checkbox_products_2">
+                <label for="input_checkbox_products_2">nur vegetarische</label>
+            </div>
+            <div>
+                <input type="checkbox" id="input_checkbox_products_3">
+                <label for="input_checkbox_products_3">nur vegane</label>
+            </div>
+            <div id="div_button_filter">
+                <button class="btn btn-primary button-fh-schema" id="button_filter">Speisen filtern</button>
+            </div>
         </div>
         <div class="col-9" id="content_bot_row_right">
             <!-- TODO
             |[{1}{2}{3}{4}]
             |[{5}{6}{7}{8}]
              -->
-            <div class="col-12" id="content_bot_row_right_cards">
+<!--            <div class="col-12" id="content_bot_row_right_cards">-->
                 <div class="card-columns">
                     <div class="card">
-                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="Picture error..." title="Bild von Niek Verlaan auf Pixabay ">
                         <div class="card-body">
                             <h5 class="card-title">Hamburger</h5>
-                            <p class="card-text">Details</p>
+                            <p class="card-text"><a href="">Details</a></p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <img src="img/hamburger_2.jpg" class="card-img-top" alt="Picture error..." title="Bild von Robert-Owen-Wahl auf Pixabay ">
                         <div class="card-body">
-                            <h5 class="card-title">Hamburger</h5>
-                            <p class="card-text">Details</p>
+                            <h5 class="card-title">Royalburger</h5>
+                            <p class="card-text"><a href="">Details</a></p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <img src="img/pasta.jpg" class="card-img-top" alt="Picture error..." title="Bild von Pexels auf Pixabay ">
                         <div class="card-body">
-                            <h5 class="card-title">Hamburger</h5>
-                            <p class="card-text">Details</p>
+                            <h5 class="card-title">Pasta</h5>
+                            <p class="card-text"><a href="">Details</a></p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <img src="img/pizza_1.jpg" class="card-img-top" alt="Picture error..." title="Bild von Free-Photos auf Pixabay ">
                         <div class="card-body">
-                            <h5 class="card-title">Hamburger</h5>
-                            <p class="card-text">Details</p>
+                            <h5 class="card-title">Pilzpizza</h5>
+                            <p class="card-text"><a href="">Details</a></p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <img src="img/pizza_2.jpg" class="card-img-top img-sold" alt="Picture error..." title="Bild von engin akyurt auf Pixabay ">
                         <div class="card-body">
-                            <h5 class="card-title">Hamburger</h5>
-                            <p class="card-text">Details</p>
+                            <h5 class="card-title text-sold">Pizza</h5>
+                            <p class="card-text text-sold">Vegriffen</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <img src="img/salad_1.jpg" class="card-img-top" alt="Picture error..." title="Bild von Pexels auf Pixabay ">
                         <div class="card-body">
-                            <h5 class="card-title">Hamburger</h5>
-                            <p class="card-text">Details</p>
+                            <h5 class="card-title">Blattsalat</h5>
+                            <p class="card-text"><a href="">Details</a></p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <img src="img/salad_2.jpg" class="card-img-top" alt="Picture error..." title="Bild von Karolina Grabowska auf Pixabay ">
                         <div class="card-body">
-                            <h5 class="card-title">Hamburger</h5>
-                            <p class="card-text">Details</p>
+                            <h5 class="card-title">Salat (gem.)</h5>
+                            <p class="card-text"><a href="">Details</a></p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <img src="img/cake.jpg" class="card-img-top" alt="Picture error..." title="Bild von Pexels auf Pixabay ">
                         <div class="card-body">
-                            <h5 class="card-title">Hamburger</h5>
-                            <p class="card-text">Details</p>
+                            <h5 class="card-title">Schokokuchen</h5>
+                            <p class="card-text"><a href="">Details</a></p>
                         </div>
                     </div>
-                </div>
 
-            </div>
+                </div>
+<!--            </div>-->
         </div>
     </div>
     <footer class="row">

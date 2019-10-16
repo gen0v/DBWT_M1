@@ -27,6 +27,9 @@ footer {
     float: right;
 }
 #button_filter {
+    float: none;
+    width: 80%;
+    margin: 80% 10% 5% 10%;
 }
 
 button:hover {
@@ -82,7 +85,7 @@ li:last-child {
 #image_start_banner {
 }
 
-#content_bot_row{
+#content_bot_row, #content_mid_row{
     margin-top: 2em;
 }
 
@@ -118,3 +121,34 @@ li:last-child {
     border-radius: 1em;
 }
 
+#select_filter {
+    width: 70%;
+    margin: 2em 15%;
+}
+
+h5.card-title {
+    margin-bottom: 6px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-img-top {
+    height: 120px;
+}
+
+.img-sold {
+    border-style: double;
+    border-color: red;
+    border-width: 5px;
+    opacity: 0.4;
+}
+
+.text-sold {
+    opacity: 0.4;
+}
+
+p a {
+    text-decoration: underline;
+}
