@@ -17,27 +17,21 @@ footer {
     border-top: 2px solid #08c0ad;
 }
 
-input {
-    width: 100%;
-    border-radius: 50px;
-}
-
-button {
-    width: 11em;
-    height: 2.5em;
-    margin-top: 8px;
-    float: right;
-    box-shadow: black;
-}
-#button_register, #button_login {
+#button_register, #button_login, .button-fh-schema {
     width: 9em;
     background-color: white;
     color: black;
     border-color: gray;
+    height: 2.5em;
+    margin-top: 8px;
+    float: right;
 }
+#button_filter {
+}
+
 button:hover {
     background-color: #08c0ad !important;
-    border-color: black;
+    border-color: black !important;
     color: white !important;
 }
 
@@ -59,20 +53,24 @@ a:hover {
 }
 
 li {
-    box-shadow: 0px 0.5em white inset,0 -0.5em white inset , -2px -0 0 0 #08c0ad inset;
+    box-shadow: 0 0.5em white inset,0 -0.5em white inset , -2px -0 0 0 #08c0ad inset;
+    /* background-color: #0c5460; TODO*/
 }
 li:last-child {
-    box-shadow: 0 0 white inset;
+    /* box-shadow: 0 0 white inset; */
+    box-shadow: 0 0.5em white inset,0 -0.5em white inset , -2px -0 0 0 white inset;
 }
 
 .col-3, .col-6, .col-7, .col-9 {
-   border: 0px solid black;
+   border: 0 solid black;
 }
 
 #header_menu_nav{
     margin-top: 1em;
 }
 #input_search{
+    width: 100%;
+    border-radius: 50px;
     margin-top: 1.5em;
     padding-left: 35px;
 }
@@ -84,7 +82,7 @@ li:last-child {
 #image_start_banner {
 }
 
-#content_bot_row {
+#content_bot_row{
     margin-top: 2em;
 }
 
@@ -103,3 +101,20 @@ li:last-child {
 #text_headline {
     font-size: 2.4em;
 }
+
+#text_headline_produkte {
+    margin-top: 1em;
+}
+
+#text_headline_filter {
+    position: absolute;
+    margin-top: -0.9em;
+    margin-left: 3.8em;
+    background-color: white;
+}
+
+.mint-border {
+    border: 2px solid #08c0ad;
+    border-radius: 1em;
+}
+

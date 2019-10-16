@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+<div class="container">
+    <header class="row">
+        <!--  LOGO | MENU | SEARCHBAR  -->
+        <div class="col-3" id="header_logo"><h1 id="logo_emensa">e-Mensa</h1></div>
+        <nav class="col-6" id="header_menu">
+            <ul class="nav" id="header_menu_nav">
+                <li class="nav-item"><a class="nav-link" href="Start.html">Start</a></li>
+                <li class="nav-item"><a class="nav-link link_selected" href="Produkte.html">Mahlzeiten</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Bestellungen</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.fh-aachen.de/" target="_blank">FH-Aachen</a></li>
+            </ul>
+        </nav>
+        <div class="col-3" id="header_search">
+            <span class="fas fa-search" id="icon_search"></span>
+            <input id="input_search" placeholder="Suchen...">
+        </div>
+    </header>
+    <!-- CONTENT                                    --                      --                  --              -->
+    <div class="row" id="content_top_row">
+        <div class="col-3">1</div>
+        <div class="col-6"><h2 id="text_headline_produkte">Verfügbare Speisen (Bestseller)</h2></div>
+        <div class="col-3">3</div>
+    </div>
+    <div class="row" id="content_bot_row">
+        <div class="col-3 mint-border" id="content_bot_row_left">
+            <!-- TODO
+            [Filter]
+            -->
+            <span id="text_headline_filter">Speisenliste filtern</span>
+            <input>
+            <input type="checkbox" id="input_checkbox_products_1">
+            <label for="input_checkbox_products_1">test</label>
+            <button class="btn btn-primary button-fh-schema" id="button_filter">Speisen filtern</button>
+        </div>
+        <div class="col-9" id="content_bot_row_right">
+            <!-- TODO
+            |[{1}{2}{3}{4}]
+            |[{5}{6}{7}{8}]
+             -->
+            <div class="col-12" id="content_bot_row_right_cards">
+                <div class="card-columns">
+                    <div class="card">
+                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburger</h5>
+                            <p class="card-text">Details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburger</h5>
+                            <p class="card-text">Details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburger</h5>
+                            <p class="card-text">Details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburger</h5>
+                            <p class="card-text">Details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburger</h5>
+                            <p class="card-text">Details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburger</h5>
+                            <p class="card-text">Details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburger</h5>
+                            <p class="card-text">Details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/hamburger_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburger</h5>
+                            <p class="card-text">Details</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="row">
+        <!--  Copyright | MENU |   -->
+        <div class="col-3" id="footer_copyright">&copy; 2019 Eugen Burikov</div>
+        <nav class="col-6" id="footer_menu">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Registrieren</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Zutatenliste</a></li>
+                <li class="nav-item"><a class="nav-link" href="Impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+        <div class="col-3" id="footer_placeholder"></div>
+    </footer>
+</div>
+</body>
+</html>
+<!--
+        <div class="col-2" id=""></div>
+        <div class="col-8" id=""></div>
+        <div class="col-2" id=""></div>
+-->
