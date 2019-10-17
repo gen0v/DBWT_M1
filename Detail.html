@@ -10,15 +10,22 @@
     <link rel="stylesheet" href="css/style.css">
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="css/all.css">
+
+<!--    <link rel="script" href="js/bootstrap.min.js">-->
+<!--    <link rel="script" href="js/jquery-3.4.1.min.js">-->
+
 </head>
 <body>
+
+
+
 <div class="container">
     <header class="row">
         <!--  LOGO | MENU | SEARCHBAR  -->
         <div class="col-3" id="header_logo"><h1 id="logo_emensa">e-Mensa</h1></div>
         <nav class="col-6" id="header_menu">
             <ul class="nav" id="header_menu_nav">
-                <li class="nav-item"><a class="nav-link link_selected" href="Start.html">Start</a></li>
+                <li class="nav-item"><a class="nav-link" href="Start.html">Start</a></li>
                 <li class="nav-item"><a class="nav-link" href="Produkte.html">Mahlzeiten</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Bestellungen</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://www.fh-aachen.de/" target="_blank">FH-Aachen</a></li>
@@ -34,23 +41,22 @@
         <!--
             [][HEADLINE][]
              -->
-        <div class="col-3" id="content_mid_row_left">
+        <div class="col-3" id="content_top_row_left">
             <!--
             [  ]
             -->
-            PH1
         </div>
-        <div class="col-6" id="content_mid_row_mid">
+        <div class="col-6" id="content_top_row_mid">
             <!--
             [HEADLINE]
              -->
-            <h2>Details für "Pilzpizza"</h2>
+            <h2>Details für "Pizza"</h2>
         </div>
-        <div class="col-3" id="content_mid_row_right">
+        <div class="col-3" id="content_top_row_right">
             <!--
             [ ]
              -->
-            PH2
+            <h5 id="text_headline_guestprice">Gast-Preis</h5>
         </div>
     </div>
     <!--------------------------------------------------------------------MIDDLE-->
@@ -62,19 +68,24 @@
             <!--
             [ LOGIN ]
             -->
-            LOGIN
+            <span id="text_headline_login">Login</span>
+            <input class="input-login" id="input_username" placeholder="Benutzer">
+            <input class="input-login" id="input_password" placeholder="********" type="password">
+            <button class="btn btn-primary button-fh-schema" id="button_login">Anmelden</button>
         </div>
         <div class="col-6" id="content_mid_row_mid">
             <!--
             [PICTURE]
              -->
-            <img class="img-fluid rounded" id="image_details_banner" src="img/pizza_1_detail.jpg" title="Photo by Dan Gold on Unsplash">
+<!--            <img class="img-fluid rounded" id="image_details_banner" src="img/pizza_1_detail.jpg" title="Photo by Dan Gold on Unsplash">-->
+            <img class="img-fluid rounded" id="image_details_banner" src="img/pizza_2.jpg" title="Photo by Dan Gold on Unsplash">
         </div>
         <div class="col-3" id="content_mid_row_right">
             <!--
             [PRIVE]
              -->
-            PRICE
+            <h2 id="text_price">5,95€</h2>
+            <button class="btn btn-primary button-fh-schema" id="button_preorder">Vorbestellen</button>
         </div>
     </div>
     <!---------------------------------------------------------------------BOTTOM-->
@@ -95,13 +106,148 @@
             <!--
             [ RATING ]
              -->
-            RATING
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Beschreibung</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Zutaten</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Bewertungen</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <!--Beschreibung -->
+                    <p>
+                        Eine hervorragende Pizza belegt mit Pilzen, Blattspinat und ganz viel Käse. Passend
+                        dazu gibt es natürlich eine guten <a href="">Salat</a>
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <!--Zutaten-->
+                    <table class="table table-sm">
+                        <tbody>
+                        <tr>
+                            <th scope="row">Zutat</th>
+                            <td>Eier</td>
+                            <td>Mehl</td>
+                            <td>Zucker</td>
+                            <td>Salz</td>
+                            <td>Pilze</td>
+                            <td>Käse</td>
+                            <td>Tomaten</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Menge</th>
+                            <td>2</td>
+                            <td>50g</td>
+                            <td>20g</td>
+                            <td>5g</td>
+                            <td>500g</td>
+                            <td>250g</td>
+                            <td>200g</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <!--RATING FORM-->
+
+                    <div class="row">
+                        <div class="col">
+                        <form action="http://bc5.m2c-lab.fh-aachen.de/form.php" method="post">
+                            <fieldset class="mint-border">
+                                <input name="matrikel" value="3145279" type="hidden">
+                                <input name="kontrolle" value="bur" type="hidden">
+
+                                <legend>Mahlzeit bewerten</legend>
+
+                                <table class="table table-sm" id="table-rating">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row" class="table-rating-th">Mahlzeit</th>
+                                        <td class="table-rating-td">
+                                            <select name="mahlzeit" id="select_rating_dish">
+                                                <optgroup label="">
+                                                    <option selected>Pizza</option>
+                                                </optgroup>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="table-rating-th">Benutzername</th>
+                                        <td class="table-rating-td">
+                                            <input name="benutzer" placeholder="Benutzer">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="table-rating-th">Bewertung</th>
+                                        <td class="table-rating-td">
+                                            <input name="bewertung" id="input_rating_ratingwheel" max="5" min="1" placeholder="5" type="number">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="table-rating-th">Bemerkung</th>
+                                        <td class="table-rating-td">
+                                            <textarea name="bewertung" rows="3" id="input_rating_comment" placeholder="Geben Sie eine Bewertung ein, wenn Sie möchten..."></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="table-rating-th"></th>
+                                        <td class="table-rating-td">
+                                            <button type="submit" class="btn btn-primary button-fh-schema" id="button_sendrating">Abschicken</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </fieldset>
+                        </form>
+                        <!--
+                        <div class="col mint-border">
+                            <span id="text_headline_rating">Mahlzeit bewerten</span>
+                            <table class="table table-sm" id="table-rating">
+                                <tbody>
+                                <tr>
+                                    <th scope="row" class="table-rating-th">Mahlzeit</th>
+                                    <td class="table-rating-td">
+                                        <select id="select_rating_dish">
+                                            <optgroup label="">
+                                                <option selected>Pizza</option>
+                                            </optgroup>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="table-rating-th">Benutzername</th>
+                                    <td class="table-rating-td">
+                                        <input placeholder="Benutzer">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="table-rating-th">Bewertung</th>
+                                    <td class="table-rating-td">
+                                        <input id="input_rating_ratingwheel" max="5" min="0" placeholder="5" type="number">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="table-rating-th">Bemerkung</th>
+                                    <td class="table-rating-td">
+                                        <textarea rows="3" id="input_rating_comment" placeholder="Geben Sie eine Bewertung ein, wenn Sie möchten..."></textarea>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-3" id="content_bot_row_right">
             <!--
             [ PLACEHOLDER ]
              -->
-            PLACERHOLER
         </div>
     </div>
     <footer class="row">
@@ -118,6 +264,10 @@
         <div class="col-3" id="footer_placeholder"></div>
     </footer>
 </div>
+
+<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
 <!--

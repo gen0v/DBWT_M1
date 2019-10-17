@@ -11,13 +11,14 @@ header {
     margin-bottom: 1em;
     border-bottom: 2px solid #08c0ad;
 }
+
 footer {
     padding-top: 5px;
     margin-top: 2em;
     border-top: 2px solid #08c0ad;
 }
 
-#button_register, #button_login, .button-fh-schema {
+.button-fh-schema {
     width: 9em;
     background-color: white;
     color: black;
@@ -26,10 +27,16 @@ footer {
     margin-top: 8px;
     float: right;
 }
-#button_filter {
+
+#button_filter, input ~ button{
     float: none;
-    width: 80%;
-    margin: 80% 10% 5% 10%;
+    width: 80% !important;
+    margin: 80% 10% 5% 10% !important;
+}
+#button_preorder {
+    float: none;
+    width: 100%;
+    margin: 80% 10% 5% 10% !important;
 }
 
 button:hover {
@@ -38,40 +45,41 @@ button:hover {
     color: white !important;
 }
 
-.text_info {
-    font-size: 1.3em;
-}
-.text_headline_extra {
+.text_info, .text_headline_extra {
     font-size: 1.3em;
 }
 
 a {
     color: black;
 }
+
 a:hover {
     color: #08c0ad;
 }
+
 .link_selected {
     color: #08c0ad;
 }
 
 li {
-    box-shadow: 0 0.5em white inset,0 -0.5em white inset , -2px -0 0 0 #08c0ad inset;
+    box-shadow: 0 0.5em white inset, 0 -0.5em white inset, -2px -0 0 0 #08c0ad inset;
     /* background-color: #0c5460; TODO*/
 }
+
 li:last-child {
     /* box-shadow: 0 0 white inset; */
-    box-shadow: 0 0.5em white inset,0 -0.5em white inset , -2px -0 0 0 white inset;
+    box-shadow: 0 0.5em white inset, 0 -0.5em white inset, -2px -0 0 0 white inset;
 }
 
 .col-3, .col-6, .col-7, .col-9 {
-   border: 0 solid black;
+    border: 0 solid black;
 }
 
-#header_menu_nav{
+#header_menu_nav {
     margin-top: 1em;
 }
-#input_search{
+
+#input_search {
     width: 100%;
     border-radius: 50px;
     margin-top: 1.5em;
@@ -82,10 +90,11 @@ li:last-child {
     margin-bottom: 5.1em;
 }
 
-#image_start_banner {
+#image_details_banner {
+
 }
 
-#content_bot_row, #content_mid_row{
+#content_bot_row, #content_mid_row {
     margin-top: 2em;
 }
 
@@ -109,11 +118,21 @@ li:last-child {
     margin-top: 1em;
 }
 
-#text_headline_filter {
+#text_headline_filter, #text_headline_login, #text_headline_rating{
     position: absolute;
     margin-top: -0.9em;
-    margin-left: 3.8em;
+    /*margin-left: 3.8em;*/
     background-color: white;
+}
+#text_headline_guestprice {
+    position: absolute;
+    margin-top: 2.5em;
+    margin-left: 8em;
+}
+#text_price {
+    text-align: right;
+    font-size: 38px;
+    margin: 0 0 62px 0 !important;
 }
 
 .mint-border {
@@ -151,4 +170,52 @@ h5.card-title {
 
 p a {
     text-decoration: underline;
+}
+
+.input-login {
+    width: 80%;
+    height: 30px;
+    margin: 10px 10% 0;
+}
+
+#input_username {
+    margin-top: 30px;
+}
+
+.tab-pane {
+    margin-top: 20px;
+}
+
+#table-rating {
+    margin-top: 30px;
+}
+.table-rating-th{
+    border: 0 !important;
+    width: 25%;
+    text-align: right;
+}
+.table-rating-td{
+    border: 0 !important;
+}
+#input_rating_ratingwheel {
+    width: 50px;
+}
+#input_rating_comment {
+    width: 100%;
+}
+textarea {
+    resize: none;
+}
+
+legend {
+    width: auto;
+    margin-left: 10%;
+}
+
+fieldset {
+    width: 100%;
+}
+
+#button_sendrating {
+    float: none;
 }
