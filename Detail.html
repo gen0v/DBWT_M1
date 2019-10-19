@@ -2,17 +2,11 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <!--
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    -->
+    <title>Detail</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="css/all.css">
-
-<!--    <link rel="script" href="js/bootstrap.min.js">-->
-<!--    <link rel="script" href="js/jquery-3.4.1.min.js">-->
 
 </head>
 <body>
@@ -25,7 +19,7 @@
         <div class="col-3" id="header_logo"><h1 id="logo_emensa">e-Mensa</h1></div>
         <nav class="col-6" id="header_menu">
             <ul class="nav" id="header_menu_nav">
-                <li class="nav-item"><a class="nav-link" href="Start.html">Start</a></li>
+                <li class="nav-item"><a class="nav-link" href="Start.php">Start</a></li>
                 <li class="nav-item"><a class="nav-link" href="Produkte.html">Mahlzeiten</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Bestellungen</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://www.fh-aachen.de/" target="_blank">FH-Aachen</a></li>
@@ -36,7 +30,7 @@
             <input id="input_search" placeholder="Suchen...">
         </div>
     </header>
-    <!---------------------------------------------------------------------TOP-->
+    <!--.......................................................................TOP-->
     <div class="row" id="content_top_row">
         <!--
             [][HEADLINE][]
@@ -59,7 +53,7 @@
             <h5 id="text_headline_guestprice">Gast-Preis</h5>
         </div>
     </div>
-    <!--------------------------------------------------------------------MIDDLE-->
+    <!--..............................................................................MIDDLE-->
     <div class="row" id="content_mid_row">
         <!--
             [LOGIN][PICTURE][PRICE]
@@ -78,7 +72,7 @@
             [PICTURE]
              -->
 <!--            <img class="img-fluid rounded" id="image_details_banner" src="img/pizza_1_detail.jpg" title="Photo by Dan Gold on Unsplash">-->
-            <img class="img-fluid rounded" id="image_details_banner" src="img/pizza_2.jpg" title="Photo by Dan Gold on Unsplash">
+            <img class="img-fluid rounded" id="image_details_banner" src="img/pizza_2.jpg" title="Photo by Dan Gold on Unsplash" alt="IMAGE ERROR">
         </div>
         <div class="col-3" id="content_mid_row_right">
             <!--
@@ -88,7 +82,7 @@
             <button class="btn btn-primary button-fh-schema" id="button_preorder">Vorbestellen</button>
         </div>
     </div>
-    <!---------------------------------------------------------------------BOTTOM-->
+    <!--...........................................................BOTTOM-->
     <div class="row" id="content_bot_row">
         <!--
             [TEXT][RATING][PLACEHOLDER]
@@ -155,11 +149,9 @@
                         <div class="col">
                         <form action="http://bc5.m2c-lab.fh-aachen.de/form.php" method="post">
                             <fieldset class="mint-border">
+                                <legend>Mahlzeit bewerten</legend>
                                 <input name="matrikel" value="3145279" type="hidden">
                                 <input name="kontrolle" value="bur" type="hidden">
-
-                                <legend>Mahlzeit bewerten</legend>
-
                                 <table class="table table-sm" id="table-rating">
                                     <tbody>
                                     <tr>
@@ -265,9 +257,9 @@
     </footer>
 </div>
 
-<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
-<script type="text/javascript" src="js/popper.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
 <!--

@@ -45,7 +45,11 @@ button:hover {
     color: white !important;
 }
 
-.text_info, .text_headline_extra {
+.text_info {
+    font-size: 1.2em;
+}
+
+.text_headline_extra {
     font-size: 1.3em;
 }
 
