@@ -45,7 +45,7 @@ button:hover {
     color: white !important;
 }
 
-.text_info {
+.text_info, .text-hello {
     font-size: 1.2em;
 }
 
@@ -222,4 +222,9 @@ fieldset {
 
 #button_sendrating {
     float: none;
+}
+
+#text_time {
+    color: black;
+    border: 1px solid black;
 }

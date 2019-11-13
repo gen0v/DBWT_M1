@@ -44,20 +44,18 @@
               TEXT2 ]|
             -->
             <p class="text-hello">
-                <script>
                     <?php
                     if(isset($_GET['username']))
                         echo "Guten Tag ", $_GET['username'];
                     ?>
-                </script>
             </p>
             <p class="text_info">
-                <script>
+                <a id="text_time">
                     <?php
                     echo date("H:i",time());
                     ?>
-                </script>
-                Der Dienst e-Mensa ist noch beta. Sie können bereits Mahlzeiten
+                </a>
+                 Der Dienst e-Mensa ist noch beta. Sie können bereits Mahlzeiten
                 durchstöbern, aber noch nicht bestellen.
             </p>
             <p class="text_info">
@@ -82,10 +80,12 @@
                         <i class="far fa-hand-point-right" id="icon_finger"></i>
                         Registrieren
                     </button>
-                    <button class="btn btn-primary btn-lg button-fh-schema" value="">
-                        <i class="fas fa-sign-in-alt" id="icon_signin"></i>
-                        Anmelden
-                    </button>
+                    <a href="http://localhost:8080/M1/Start.php?username=EugenBurikov">
+                        <button class="btn btn-primary btn-lg button-fh-schema" value="">
+                            <i class="fas fa-sign-in-alt" id="icon_signin"></i>
+                            Anmelden
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="row" id="content_bot_row_right_bot">
@@ -98,11 +98,9 @@
     <footer class="row">
         <!--  Copyright | MENU |   -->
         <div class="col-3" id="footer_copyright">&copy;
-            <script>
                 <?php
                 echo date("d.n.Y",time());
                 ?>
-            </script>
             Eugen Burikov</div>
         <nav class="col-6" id="footer_menu">
             <ul class="nav">
